@@ -1,6 +1,6 @@
 
 //When addTaskoAction is called, it takes the global state and finds the specific task in the global state, 
-//and if it doesn't find it then it's gonna call the reducer with the dispatch function, where it passes the id of the task,the task and with the redux state of the tasks, to the payload.
+//and if it doesn't find it then it's gonna call the reducer with the dispatch function, where it passes the task with the redux state of the tasks, to the payload.
 export const AddTaskAction = (randomId, taskTitle, taskDescrip) => (dispatch, getState) => {
     const {
         Task: { tasks},
